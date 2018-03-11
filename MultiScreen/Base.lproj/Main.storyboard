@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MultiScreen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nJA-7A-L9c">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Number" id="c8G-0S-GCD">
+                                        <barButtonItem key="rightBarButtonItem" image="ic_format_color_text_48pt.png" id="xHn-0D-09e">
+                                            <connections>
+                                                <segue destination="aeP-pP-Vdt" kind="show" id="bvZ-m8-wdf"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zVl-BK-o8H">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem systemItem="stop" id="aa6-FY-QCJ"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="ase-mi-9ON"/>
+                                    <barButtonItem systemItem="play" id="gwZ-yV-Imm"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="juz-ob-qHJ"/>
+                                    <barButtonItem systemItem="pause" id="aBY-Ft-lnB"/>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rLs-Ko-m6N">
+                                <rect key="frame" x="0.0" y="184" width="375" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="hRZ-cr-x1y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="250"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rLs-Ko-m6N" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5me-Tx-vTz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rLs-Ko-m6N" secondAttribute="trailing" id="LHA-z3-I4v"/>
+                            <constraint firstItem="rLs-Ko-m6N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WQn-XI-FKd"/>
+                            <constraint firstItem="rLs-Ko-m6N" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="y4L-kc-woi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="669.60000000000002" y="31.934032983508249"/>
+        </scene>
+        <!--Text View Controller-->
+        <scene sceneID="lyU-0t-0BV">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LhA-wy-ohe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="aeP-pP-Vdt" customClass="TextViewController" customModule="MultiScreen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Cv-LB-PSf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vUU-sS-7Ee">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem systemItem="stop" id="xhN-yj-o4y"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="z0K-qS-xMO"/>
+                                    <barButtonItem systemItem="play" id="usQ-6o-ZBh"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="YrT-nV-Qx1"/>
+                                    <barButtonItem systemItem="pause" id="hv0-xW-LfO"/>
+                                </items>
+                            </toolbar>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VzE-Ok-gXT">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Text" id="0Iv-nC-7hY">
+                                        <barButtonItem key="leftBarButtonItem" image="ic_keyboard_arrow_left_48pt.png" id="PgF-Ba-vsd">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="dry-8h-yhD"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="One" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CAK-jR-vFk">
+                                <rect key="frame" x="0.0" y="184" width="375" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="Nw5-X1-xSa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="120"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CAK-jR-vFk" firstAttribute="centerY" secondItem="1Cv-LB-PSf" secondAttribute="centerY" id="5dc-dp-LiC"/>
+                            <constraint firstItem="CAK-jR-vFk" firstAttribute="leading" secondItem="0wH-gx-fnX" secondAttribute="leading" id="8Ty-qV-WD2"/>
+                            <constraint firstItem="0wH-gx-fnX" firstAttribute="trailing" secondItem="CAK-jR-vFk" secondAttribute="trailing" id="GKN-jj-ShY"/>
+                            <constraint firstItem="CAK-jR-vFk" firstAttribute="centerX" secondItem="1Cv-LB-PSf" secondAttribute="centerX" id="Paj-bP-7Tw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0wH-gx-fnX"/>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1488.8" y="31.934032983508249"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_format_color_text_48pt.png" width="48" height="48"/>
+        <image name="ic_keyboard_arrow_left_48pt.png" width="48" height="48"/>
+    </resources>
+</document>
