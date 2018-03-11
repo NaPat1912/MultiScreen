@@ -15,6 +15,7 @@
 		41C04B3A2054EC720025D5E1 /* ic_format_color_text_48pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 41C04B392054EC720025D5E1 /* ic_format_color_text_48pt.png */; };
 		41C04B3C2054F9AC0025D5E1 /* ic_keyboard_arrow_left_48pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 41C04B3B2054F9AC0025D5E1 /* ic_keyboard_arrow_left_48pt.png */; };
 		41C04B3E2054FB490025D5E1 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C04B3D2054FB490025D5E1 /* TextViewController.swift */; };
+		41C04B40205502290025D5E1 /* MyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C04B3F205502290025D5E1 /* MyClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		41C04B392054EC720025D5E1 /* ic_format_color_text_48pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_format_color_text_48pt.png; sourceTree = "<group>"; };
 		41C04B3B2054F9AC0025D5E1 /* ic_keyboard_arrow_left_48pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_keyboard_arrow_left_48pt.png; sourceTree = "<group>"; };
 		41C04B3D2054FB490025D5E1 /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
+		41C04B3F205502290025D5E1 /* MyClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			children = (
 				41C04B272054EB3B0025D5E1 /* AppDelegate.swift */,
 				41C04B292054EB3B0025D5E1 /* ViewController.swift */,
+				41C04B3F205502290025D5E1 /* MyClass.swift */,
 				41C04B3D2054FB490025D5E1 /* TextViewController.swift */,
 				41C04B2B2054EB3B0025D5E1 /* Main.storyboard */,
 				41C04B2E2054EB3B0025D5E1 /* Assets.xcassets */,
@@ -147,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41C04B40205502290025D5E1 /* MyClass.swift in Sources */,
 				41C04B2A2054EB3B0025D5E1 /* ViewController.swift in Sources */,
 				41C04B282054EB3B0025D5E1 /* AppDelegate.swift in Sources */,
 				41C04B3E2054FB490025D5E1 /* TextViewController.swift in Sources */,
